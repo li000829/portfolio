@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Background image */
+.banner {
+    background: url(../images/131187.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    opacity: 90%;
+}
+
+:root {
+    --bs-secondary: #F1EBEB;
+    --bs-secondary-rgb: 241,235,235;
+}
+
+
+
+
