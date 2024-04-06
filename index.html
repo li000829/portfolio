@@ -10,57 +10,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <div class="banner text-white" id="welcome">
+    <div class="banner text-bg-secondary" id="welcome">
         <header>
             <div class="content-container">
                 <!-- Navigation -->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                    <a class="navbar-brand" href="#home"><img src="./images/ux logo.png" alt="monya logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home<span class="sr-only"></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#project">Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent me-4 pt-5">
+                    <div class="container-xl">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/ux logo.png" alt="monya logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse adjust-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav fs-5 fw-bolder">
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link active" aria-current="page" href="#home">Home<span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link" href="#project">Projects</a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
-        <main class="welcome-container position-absolute top-50 start-50 translate-middle text-center">
+        <main class="welcome-container position-absolute top-50 start-50 translate-middle text-center p-5">
             <h1 class="display-1 fw-bold">Welcome</h1>
             <p class="fs-5 fw-light">Thanks for taking the time to browse my page, you can learn more about me here. </p>
+                <a class="main-button border-0" href="#about">
+                    <img src="./images/button.png" alt="button image" class="border-0"></a>
+            </div>
         </main>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="bg-secondary py-3 text-black text-center">
-            <section>
-                <a href="#" class="nav-link">Facebook</a>
-                <a href="#" class="nav-link">Instagram</a>
-                <a href="#" class="nav-link">Twitter</a>
-                <a href="#" class="nav-link">YouTube</a>
-            </section>
-            <section>
-                <p>Copyright © 2024 Jing Li</p>
-                <p>All Rights Reserved</p>
-            </section>
+        <div class="bg-secondary py-5 text-black text-center">
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="nav-link mx-3">
+                    <img src="./images/Facebook.png" alt="Facebook"></a>
+                <a href="#" class="nav-link mx-3">
+                    <img src="./images/Instagram.png" alt="Instagram"></a>
+                <a href="#" class="nav-link mx-3">
+                    <img src="./images/Twitter.png" alt="Twitter"></a>
+                <a href="#" class="nav-link mx-3">
+                    <img src="./images/youtube.png" alt="YouTube"></a>
+            </div>
+                </br>
+                <p class="mb-1 fs-5 fw-lighter fst-italic">Copyright © 2024 Jing Li</p>
+                <p class="fs-5 fw-lighter fst-italic">All Rights Reserved</p>
         </div>
     </footer>  
     
