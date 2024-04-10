@@ -37,16 +37,11 @@ body, html {
 }
 
 
-
-@media (max-width: 991px) {
+@media (max-width: 575.98px) {
     .navbar-nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    .welcome-container {
-        display: none;
     }
   }
 
