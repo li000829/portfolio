@@ -75,14 +75,7 @@ h3{
       }
   }
 
-  /* display back to top button on mobile style */
-  @media (min-width:991px) {
-    .back-to-top {
-      display: none; 
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-  }
-
+  /* style back to top button */
   .back-to-top {
     position: fixed;
     bottom: 1rem; 
@@ -94,6 +87,13 @@ h3{
     width: 3rem; 
     transition: opacity 0.3s ease;
     z-index: 1050; 
+  }
+
+  /* Project Page CSS */
+  .projects-img {
+    width: 100%; /* 使图像响应式 */
+    height: auto;
+    margin-bottom: 20px;
   }
 
   
