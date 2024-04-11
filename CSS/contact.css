@@ -4,7 +4,7 @@ body, html {
     font-family: "Inter", sans-serif;
 }
 
-/* custom CSS for background image in navbar */
+/* custom CSS for background image in navbar and button */
 .navbar-custom {
     background-image: url(../images/navbarbanner.jpg);
     background-size: cover;
@@ -14,10 +14,20 @@ body, html {
 
 :root {
     --bs-primary: white;
+    --bs-primary-rgb: 255,255,255;
     --bs-secondary: #F1EBEB;
     --bs-secondary-rgb: 241,235,235;
+    --bs-warning:#FAA82C;
+    --bs-warning: 250,168,44;
     --bs-dark: rgb(7,7,7);
 }
+
+.btn-warning {
+    --bs-btn-bg: var(--bs-warning);
+    --bs-btn-border-color: var(--bs-warning);
+    --bs-btn-hover-bg: var(--bs-warning);
+}
+
 
 .navbar-nav .nav-link{
     color: var(--bs-primary);
@@ -33,25 +43,11 @@ body, html {
     text-decoration: underline;
 }
 
-/* different font size in About page */
-h3{
-    font-family: "Nanum Brush Script", cursive;
-    font-weight: 400;
-    font-style: normal; 
-}
-
-.about-content {
-    font-family: "Nanum Brush Script", cursive;
-    font-weight: 400;
-    font-style: normal; 
-}
-
 /* change image size for different media */
 @media (min-width: 576px)and (max-width: 991px) {
     .custom-img {
-      width: 300px; 
-      height: 300px;
       object-fit: cover;
+      margin-top: 3rem;
     }
     .navbar-collapse {
         display:none;
@@ -60,14 +56,9 @@ h3{
 
   @media (max-width:575.98px) {
     .custom-img {
-        width: 300px; 
-        height: 300px;
-        object-fit: cover;
+        display: none;
       }
-    .aboutme {
-        display: block;
-        width: 100%;
-      }
+
     .navbar-nav {
         display: flex;
         flex-direction: column;
@@ -88,20 +79,3 @@ h3{
     transition: opacity 0.3s ease;
     z-index: 1050; 
   }
-
-  /* Project Page CSS */
-  .projects-img {
-    width: 100%; 
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-
-
-
-
-
-
-
-
-
