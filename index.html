@@ -26,7 +26,7 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                
+
                         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                             <ul class="navbar-nav fs-5 fw-bolder">
                                 <li class="nav-item mx-4">
@@ -48,10 +48,12 @@
             </div>
         </header>
         <main class="welcome-container position-absolute top-50 start-50 translate-middle text-center p-5">
-            <h1 class="display-1 fw-bold">Welcome</h1>
-            <p class="fs-5 fw-light">Thanks for taking the time to browse my page, you can learn more about me here. </p>
-                <a class="main-button border-0" href="#about">
-                    <img src="./images/button.png" alt="button image" class="border-0"></a>
+            <div class="welcome-section" id="welcomeSection">
+                <h1 class="display-1 fw-bold">Welcome</h1>
+                <p class="fs-5 fw-light">Thanks for taking the time to browse my page, you can learn more about me here. </p>
+                    <a class="main-button border-0" href="#about">
+                        <img src="./images/button.png" alt="button image" class="border-0"></a>
+            </div>
         </main>
     </div>
 
@@ -72,11 +74,25 @@
                 <p class="mb-1 fs-5 fw-lighter fst-italic">Copyright © 2024 Jing Li</p>
                 <p class="fs-5 fw-lighter fst-italic">All Rights Reserved</p>
         </div>
-    </footer>  
-    
+    </footer>
+
     <!-- Java Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // When the navbar is shown
+            document.getElementById('navbarSupportedContent').addEventListener('show.bs.collapse', function () {
+              // Add a class that sets visibility to hidden
+              document.getElementById('welcomeSection').classList.add('invisible');
+            });
+            // When the navbar is hidden
+            document.getElementById('navbarSupportedContent').addEventListener('hide.bs.collapse', function () {
+              // Remove the class that sets visibility to hidden
+              document.getElementById('welcomeSection').classList.remove('invisible');
+            });
+          });
+    </script>
   </body>
 </html>
