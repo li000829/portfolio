@@ -36,9 +36,9 @@ body, html {
     text-decoration: underline;
 }
 
-.invisible {
-    visibility: hidden !important;
-  }
+.invisible { 
+    display: none; 
+}
 
 @media (max-width: 575.98px) {
     .navbar-nav {

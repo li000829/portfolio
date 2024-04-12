@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -81,18 +81,39 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        var toggleFlag = 0 // variable to record if show navbar
         document.addEventListener('DOMContentLoaded', (event) => {
-            // When the navbar is shown
-            document.getElementById('navbarSupportedContent').addEventListener('show.bs.collapse', function () {
-              // Add a class that sets visibility to hidden
-              document.getElementById('welcomeSection').classList.add('invisible');
+            const navbarSupportedContent = document.getElementById('navbarSupportedContent');
+            const welcomeSection = document.getElementById('welcomeSection');
+
+            // Function to check and update visibility based on window size
+            function updateVisibility() {
+                if (window.innerWidth > 575.98) {
+                    welcomeSection.classList.remove('invisible');
+                } else {
+                    if ( toggleFlag == 1 ) {
+                        welcomeSection.classList.add('invisible')
+                    }
+                }
+            }
+
+            // Event listeners for collapsing navbar
+            navbarSupportedContent.addEventListener('show.bs.collapse', function () {
+                welcomeSection.classList.add('invisible');
+                toggleFlag = 1;
             });
-            // When the navbar is hidden
-            document.getElementById('navbarSupportedContent').addEventListener('hide.bs.collapse', function () {
-              // Remove the class that sets visibility to hidden
-              document.getElementById('welcomeSection').classList.remove('invisible');
+
+            navbarSupportedContent.addEventListener('hide.bs.collapse', function () {
+                welcomeSection.classList.remove('invisible');
+                toggleFlag = 0;
             });
-          });
+
+            // Event listener for resizing window
+            window.addEventListener('resize', updateVisibility);
+
+            // Initial check on load
+            updateVisibility();
+        });
     </script>
   </body>
 </html>
