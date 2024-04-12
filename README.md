@@ -1,5 +1,5 @@
 # portfolio
-##[figma link] (https://www.figma.com/file/nGqMyj5KWqosWWyWsIxmsq/Wireframe-Jing-Li?type=design&node-id=1%3A12&mode=design&t=LHVLZOit7kteEgKB-1)
+##[mockup link] (https://www.figma.com/file/nGqMyj5KWqosWWyWsIxmsq/Wireframe-Jing-Li?type=design&node-id=1%3A12&mode=design&t=LHVLZOit7kteEgKB-1)
 
 ##[google fonts] ***"Inter" "Nanum+Brush+Script"***
 
