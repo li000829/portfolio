@@ -40,6 +40,7 @@ body, html {
     display: none; 
 }
 
+/* hidden main content under 576px */
 @media (max-width: 575.98px) {
     .navbar-nav {
       display: flex;
